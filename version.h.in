@@ -1,0 +1,13 @@
+/********************************************************************
+ *                                                                  *
+ * Do not change version.h file!!!                                  *
+ * Its file generated from version.h.in!                            *
+ * File version.h.in can be changed.                                *
+ *                                                                  *
+ * ******************************************************************/
+#define PROGRAM_VERSION_MAJOR ${PROJECT_VERSION_MAJOR}
+#define PROGRAM_VERSION_MINOR ${PROJECT_VERSION_MINOR}
+#define PROGRAM_VERSION_PATCH ${PROJECT_VERSION_PATCH}
+#define PROGRAM_VERSION_TWEAK ${PROJECT_VERSION_TWEAK}
+
+#define PROGRAM_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}.${PROJECT_VERSION_TWEAK}"
