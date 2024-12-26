@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.23)
 project(fp
-        VERSION 1.0.0.4
+        VERSION 1.0.0.5
         DESCRIPTION "File Property utility"
         LANGUAGES CXX)
 
@@ -13,7 +13,8 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable( fp
                 ${PRJ_SRC_DIR}/main.cpp
-                ${PRJ_SRC_DIR}/crc32.cpp)
+                ${PRJ_SRC_DIR}/crc32.cpp
+                ${PRJ_SRC_DIR}/csvfile.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${PRJ_INC_DIR})
 

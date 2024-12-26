@@ -124,13 +124,13 @@ int main(int argc, char** argv)
 
     try
     {
-        csvfile csv("report.csv"); // throws exceptions!
+        CsvFile csv("report.csv"); // throws exceptions!
         csv << "path" << "name" << "date" << "size" << "crc32" << endrow;// Header
         for(auto &p : file_prop){
             csv << p.path << p.name << p.date << p.size << p.crc32 << endrow;// Data
         }
         csv << "----" << "----" << "----" << "----" << "----" << endrow;
-        csv << "Summary size"<< "" << "" << size_sum << endrow;
+        csv << "Summary size" << "" << "" << size_sum << endrow;
     }
     catch (const std::exception& ex)
     {
